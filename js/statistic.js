@@ -1,15 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js";
 import { getFirestore, collection, query, orderBy, getDocs } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore.js";
 
-const firebaseConfig = {
-  apiKey: "AIzaSyBDhIfWtYWzH8GeHEtKIyY3fyuwBBx695Q",
-  authDomain: "ble-sens-sdb.firebaseapp.com",
-  projectId: "ble-sens-sdb",
-  storageBucket: "ble-sens-sdb.appspot.com",
-  messagingSenderId: "710512551634",
-  appId: "1:710512551634:web:4683e809dffab336d56f0b"
-};
-
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
