@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>BLE Sensor Static</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="/pages/info.html">Информация</a></li>
+                <li><a href="/pages/graphics.html">Графики</a></li>
+                <li><a href="/pages/statistic.html">Статистика</a></li>
+            </ul>
+        </nav>
+        <main class="content-container">
+            <div id="realtimeData">
+                <h2>Реальное время</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Комната</th>
+                            <th>Температура</th>
+                            <th>Влажность</th>
+                            <th>Дата</th>
+                            <th>Время</th>
+                        </tr>
+                    </thead>
+                    <tbody id="realtimeSensorData"></tbody>
+                </table>
+            </div>
+            <div id="latestEntries">
+                <h2>Последние записи</h2>
+                <table id="latestSensorDataTable">
+                    <thead>
+                        <tr>
+                            <th>Комната</th>
+                            <th>Температура</th>
+                            <th>Влажность</th>
+                            <th>Дата</th>
+                            <th>Время</th>
+                        </tr>
+                    </thead>
+                    <tbody id="latestSensorData"></tbody>
+                </table>
+            </div>
+        </main>
+        <footer>
+            <p>© 2024 Ваш Сайт. Все права защищены.</p>
+        </footer>
+    </div>
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>
